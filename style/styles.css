@@ -1,0 +1,333 @@
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    box-sizing: inherit;
+    font-family: "Open Sans", "Arial","san-serif";
+    font-weight: 700;
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main{
+    padding: 0 100px;
+}
+
+h1{
+    font-size: 30px;
+    line-height: 39px;
+    margin: 0;
+}
+
+h2{
+    font-size: 24px;
+    line-height: 31px;
+    margin: 0;
+    padding-top: 56px;
+    text-align: center;
+}
+
+h3{
+    font-size: 20px;
+    line-height: 26px;
+    margin: 0;
+}
+
+p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    list-style-type: none;
+}
+
+.bnt{
+    background-color: #00BAFC;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    margin-bottom: 56px;
+    cursor: pointer;
+}
+
+.bnt:hover{
+    background: rgba(0, 186, 252, 0.8);
+}
+
+.bnt:active{
+    background: rgba(0, 186, 252, 0.6);
+}
+
+.main-text{
+    text-align: center;
+    width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 100px;
+    padding-left: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.logo{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.list{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.list-item{
+    margin: auto 16px;
+}
+
+.list-item:last-child{
+    margin-right: 0;
+}
+
+.item-link{
+    font-size: 15px;
+    color: #000;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+.bnt-link{
+    color: white;
+}
+
+.buissnes{
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding: 0 100px;
+    justify-content: space-between;
+}
+
+.buissnes-way{
+    width: 470px;
+    margin: auto 0;
+}
+
+.title-text{
+    margin-right:2.5px;
+    margin-left: 2.5px;
+}
+
+.youtube-video{
+    width: 458px;
+    min-height: 258px;
+    border-radius: 5px;
+}
+
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.courses{
+    width: 320px;
+    margin-right: 70px;
+    margin-bottom: 40px;
+    margin-top: 8px;
+    text-align: center;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.courses:nth-child(3n){
+    margin-right: 0;
+}
+
+.courses:hover{
+    box-shadow: 0px 12px 21px rgba(0, 0, 0, 0.1);
+}
+
+.courses:active{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.bnt-link{
+    text-align: center;
+}
+
+.services-link{
+    color: #00BAFC;
+}
+
+.services-bnt, .services-link{
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.our-work{
+    display: flex;
+    flex-direction: column;
+    width: 832px;
+    margin: 0 auto;
+}
+
+.offers{
+    display: flex;
+    margin-bottom: 40px;
+    padding-top: 8px;
+}
+
+.offers:nth-child(2n){
+    align-self: flex-end;
+}
+
+.works{
+    margin: auto 0;
+}
+
+.works-odd{
+    margin-left: 32px;
+}
+
+.works-even{
+    margin-right: 32px;
+}
+
+
+.work-title{
+    margin: 0;
+}
+
+.work-text{
+    margin: 8px 0;
+    width: 490px;
+}
+
+.work-bnt{
+    align-self: center;
+}
+
+.checkout{
+    background-color: #00BAFC;
+}
+
+.checkout-title{
+    color: #fff;
+}
+
+.form-out{
+    width: 348px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 64px;
+}
+
+.checkout, .form-out{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-out, select{
+    margin: 0 24px 16px 24px;
+    border-radius: 5px;
+    background-color: #F3F3F3;
+    border: none;
+}
+
+.input-out{
+    padding: 16px;
+    width: 300px;
+    height: 50px;
+}
+
+.input-out:first-child{
+    margin-top: 24px;
+}
+
+.select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url("https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-down-b-16.png") #F3F3F3 no-repeat 98.5% !important ; /* !important used for overriding all other customisations */
+    background: url("https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-down-b-16.png") #F3F3F3 no-repeat calc(100% - 10px) !important; /* Better placement regardless of input width */
+    width: 300px;
+    height: 50px;
+    padding: 16px;
+}
+
+.check-bnt{
+    margin-bottom: 24px;
+}
+
+.footer{
+    background-color: #191919;
+    color: #fff;
+}
+
+.footer-container{
+    display: flex;
+    padding: 56px 0 56px 100px;
+}
+
+.footer-title{
+    width: 320px;
+}
+
+.site-info{
+    width: 143px;
+    margin-left: 100px;
+}
+
+.footer-item{
+    display: flex;
+    align-items: center;
+}
+
+.footer-link{
+    display: block;
+    color: #fff;
+    font-weight: 400;
+    margin: 4px 0;
+}
+
+.footer-link:hover{
+    color: #00BAFC;
+}
+
+.imges-net{
+    margin-right: 8px;
+}
+
+.networks{
+    margin-left: 87px;
+}
