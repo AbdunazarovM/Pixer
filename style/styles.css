@@ -273,6 +273,7 @@ a{
     border-radius: 5px;  
     overflow: hidden;
     padding: 24px;
+    color: #191919;
     background-color: #fff;
     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
     text-decoration: none;
@@ -335,46 +336,78 @@ a{
 
 /*our-work section*/
 
-.our-work{
-    display: flex;
-    flex-direction: column;
+.our-work-list{
     width: 832px;
-    margin: 0 auto;
+    margin: 8px auto 40px;
+    padding: 0;
+    list-style: none;
 }
 
-.offers{
+.offers-item{
     display: flex;
-    margin-bottom: 40px;
-    padding-top: 8px;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.offers:nth-child(2n){
-    align-self: flex-end;
+.offers-item:not(:last-child){
+    margin-bottom: 48px;
 }
 
-.works{
-    margin: auto 0;
+.offers-item:nth-child(even){
+    flex-direction: row-reverse;
 }
 
-.works-odd{
-    margin-left: 32px;
+.offers-item::before{
+    content: "";
+    width: 300px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
 }
 
-.works-even{
-    margin-right: 32px;
+.offer-requirements::before{
+    height: 278px;
+    background-image: url(../imges/talablar.png);
 }
 
-.work-title{
-    margin: 0;
+.offer-get-offers::before{
+    height: 225px;
+    background-image: url(../imges/yechim.png);
 }
 
-.work-text{
-    margin: 8px 0;
+.offer-time::before{
+    height: 258px;
+    background-image: url(../imges/vaqt.png);
+}
+
+.offer-quality::before{
+    height: 171px;
+    background-image: url(../imges/sifat.png);
+}
+
+.offer-support::before{
+    height: 232px;
+    background-image: url(../imges/support.png);
+}
+
+.offers-details{
     width: 490px;
 }
 
-.work-bnt{
-    align-self: center;
+.work-title{
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.work-text{
+    margin: 0;
+}
+
+.our-work-footer{
+    display: flex;
+    justify-content: center;
 }
 
 /*Check out section*/
