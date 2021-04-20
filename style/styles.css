@@ -385,45 +385,75 @@ a{
 
 /* Footer */
 
-.footer{
+.site-footer{
     background-color: #191919;
     color: #fff;
+    padding-top: 56px;
+    padding-bottom: 56px;
 }
 
-.footer-container{
+.site-footer-container{
     display: flex;
-    padding: 56px 100px 56px 100px;
 }
 
-.footer-title{
+.site-footer-info{
     width: 320px;
+    margin-right: 100px;
+}
+
+.site-footer-heading{
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: bold;
 }
 
 .site-info{
-    width: 143px;
-    margin-left: 100px;
+    width: 145px;
+    margin-right: 85px;
 }
 
-.footer-item{
-    display: flex;
-    align-items: center;
+.site-footer-list{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer-item:not(:last-child){
+    margin-bottom: 8px;
 }
 
 .footer-link{
-    display: block;
+    display: inline-flex;
     color: #fff;
     font-weight: 400;
-    margin: 4px 0;
 }
 
 .footer-link:hover{
     color: #00BAFC;
 }
 
-.imges-net{
-    margin-right: 8px;
+.footer-link:active{
+    opacity: 0.6;
 }
 
-.networks{
-    margin-left: 87px;
+.footer-icon::before{
+    content: "";
+    width: 22px;
+    height: 22px;
+    margin-right: 8px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.telegram::before{
+    background-image: url(../imges/telegram.svg);
+}
+.facebook::before{
+    background-image: url(../imges/facebook.svg);
+}
+.Instagram::before{
+    background-image: url(../imges/instagram.svg);
 }
