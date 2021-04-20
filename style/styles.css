@@ -4,9 +4,9 @@
     box-sizing: inherit;
 }
 
+/*Global styles*/
+
 html{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -14,6 +14,10 @@ body{
     box-sizing: inherit;
     font-family: "Open Sans", "Arial","san-serif";
     font-weight: 700;
+}
+
+main{
+    padding-top: 80px;
 }
 
 
@@ -46,12 +50,15 @@ a{
     text-decoration: none;
 }
 
-ul{
-    padding: 0;
-    list-style-type: none;
-}
+
 .logo {
     display: block;
+}
+
+/*Sitenav*/
+
+.logo:active{
+    opacity: 0.4;
 }
 
 .container{
@@ -88,30 +95,44 @@ ul{
 
 .navbar{
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-    margin-bottom: 80px;
 }
 
 .navbar-container{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 
 .list{
     display: flex;
+    list-style-type: none;
     align-items: center;
     margin: 0;
+    margin-left: auto;
     padding: 0;
 }
+
+.list-item{
+    position: relative;
+    z-index: 1;
+}
+
+.list-item:hover .dropdawn-menu{
+    display: block;
+}
+
 
 
 .bnt-link:hover {
     color: #00bafc;
     background-color: #fff;
     border: 3px solid #00bafc;
+}
+
+.bnt-link:active {
+    opacity: 0.6;
+    background-color: #00bafc;
+    color: #fff;
 }
 
 .item-link{
@@ -123,14 +144,50 @@ ul{
     line-height: 24px;
     padding: 16px;
 }
-.item-link:hover:not(.bnt-link) {
+.item-link:hover{
     padding: 16px 16px 13px 16px;
     border-bottom: 3px solid black;
 }
+
 .item-link:active {
     color: #fff;
     background-color: rgba(25, 25, 25, 0.7);
 }
+
+.dropdawn-menu{
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    z-index: 5;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+}
+
+.dropdawn-menu .dropdawn-link{
+    display: block;
+    padding: 8px 16px;
+    color: #191919;
+    white-space: nowrap;
+}
+
+.dropdawn-menu .dropdawn-link:hover{
+    background-color: #00bafc;
+    color: #fff;
+}
+
+.dropdawn-menu .dropdawn-link:active{
+    opacity: 0.6;
+}
+
 .bnt-link {
     color: white;
     background-color: #00bafc;
@@ -142,6 +199,9 @@ ul{
     margin-top: 8px;
     margin-bottom: 8px;
 }
+
+/*Buisnes section*/
+
 .buissnes{
     margin-bottom: 80px;
 }
@@ -167,6 +227,8 @@ ul{
     min-height: 258px;
     border-radius: 5px;
 }
+
+/*Services section*/
 
 .services-container{
     padding-top: 56px;
@@ -215,6 +277,8 @@ ul{
     margin-left: 8px;
 }
 
+/*our-work section*/
+
 .our-work{
     display: flex;
     flex-direction: column;
@@ -256,6 +320,8 @@ ul{
 .work-bnt{
     align-self: center;
 }
+
+/*Check out section*/
 
 .checkout{
     background-color: #00BAFC;
@@ -317,7 +383,7 @@ ul{
     margin-bottom: 24px;
 }
 
-/* Footer boshlandi */
+/* Footer */
 
 .footer{
     background-color: #191919;
