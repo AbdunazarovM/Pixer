@@ -237,6 +237,7 @@ a{
     width: 458px;
     min-height: 258px;
     border-radius: 5px;
+    border: none;
 }
 
 /*Services section*/
