@@ -335,12 +335,10 @@ a{
 .service-link{
     color: #00BAFC;
     text-decoration: underline;
+    margin-left: 16px;
+    font-weight: 400;
 }
 
-.services-bnt, .service-link{
-    margin-right: 8px;
-    margin-left: 8px;
-}
 
 /*our-work section*/
 
@@ -536,9 +534,11 @@ a{
 .telegram::before{
     background-image: url(../imges/telegram.svg);
 }
+
 .facebook::before{
     background-image: url(../imges/facebook.svg);
 }
+
 .Instagram::before{
     background-image: url(../imges/instagram.svg);
 }
